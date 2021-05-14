@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expect window to have title\n                \n                Expected: \"asdfadfasdfsad\"\n                Received: \"Laptop | eBay\"",
+      "children" : [ {
+        "name" : "should redirect to a new page and verify the title",
+        "uid" : "711fb9566d52ebfe",
+        "parentUid" : "aa20e903b38d696432f726053f94e460",
+        "status" : "failed",
+        "time" : {
+          "start" : 1621018435673,
+          "stop" : 1621018446977,
+          "duration" : 11304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-90.0.4430.212" ]
+      } ],
+      "uid" : "aa20e903b38d696432f726053f94e460"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

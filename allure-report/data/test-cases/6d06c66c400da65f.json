@@ -1,0 +1,155 @@
+{
+  "uid" : "6d06c66c400da65f",
+  "name" : "should open the main url and verify the title",
+  "fullName" : "Ebay Product search.should open the main url and verify the title",
+  "historyId" : "2ea031a8d0ea0eaffa2bdb027aceb791",
+  "time" : {
+    "start" : 1621018428403,
+    "stop" : 1621018432102,
+    "duration" : 3699
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1621018428406,
+        "stop" : 1621018428563,
+        "duration" : 157
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa6a77841872d63d",
+        "name" : "Response",
+        "source" : "fa6a77841872d63d.json",
+        "type" : "application/json",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1621018428564,
+        "stop" : 1621018432086,
+        "duration" : 3522
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b39ffed6c0a53279",
+        "name" : "Request",
+        "source" : "b39ffed6c0a53279.json",
+        "type" : "application/json",
+        "size" : 36
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/title",
+      "time" : {
+        "start" : 1621018432090,
+        "stop" : 1621018432100,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bae690a456ddb0c1",
+        "name" : "Response",
+        "source" : "bae690a456ddb0c1.json",
+        "type" : "application/json",
+        "size" : 56
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "testClass",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "testMethod",
+    "value" : "should open the main url and verify the title"
+  }, {
+    "name" : "package",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.212"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "443e286f2eaaf7ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621018151727,
+        "stop" : 1621018156504,
+        "duration" : 4777
+      }
+    }, {
+      "uid" : "27407364f4db1854",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621011242809,
+        "stop" : 1621011245908,
+        "duration" : 3099
+      }
+    }, {
+      "uid" : "cd2df2a3efc79085",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621009981042,
+        "stop" : 1621009984190,
+        "duration" : 3148
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d06c66c400da65f.json",
+  "parameterValues" : [ "chrome-90.0.4430.212" ]
+}

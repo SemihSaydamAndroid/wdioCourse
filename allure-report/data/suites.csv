@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri May 14 21:53:52 EET 2021","Fri May 14 21:53:55 EET 2021","3571","","Ebay Product search","","Ebay Product search","should search for product and verify the search text value","should search for product and verify the search text value",""
+"passed","Fri May 14 21:53:48 EET 2021","Fri May 14 21:53:52 EET 2021","3699","","Ebay Product search","","Ebay Product search","should open the main url and verify the title","should open the main url and verify the title",""
+"failed","Fri May 14 21:53:55 EET 2021","Fri May 14 21:54:06 EET 2021","11304","","Ebay Product search","","Ebay Product search","should redirect to a new page and verify the title","should redirect to a new page and verify the title",""
+"passed","Fri May 14 21:54:06 EET 2021","Fri May 14 21:54:07 EET 2021","168","","Ebay Product search","","Ebay Product search","should update the search category via dropdown","should update the search category via dropdown",""

@@ -1,0 +1,79 @@
+{
+  "2ea031a8d0ea0eaffa2bdb027aceb791" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d06c66c400da65f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621018428403,
+        "stop" : 1621018432102,
+        "duration" : 3699
+      }
+    } ]
+  },
+  "3d0804503b75acafa4aa896e41a55d09" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "711fb9566d52ebfe",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have title\n                \n                Expected: \"asdfadfasdfsad\"\n                Received: \"Laptop | eBay\"",
+      "time" : {
+        "start" : 1621018435673,
+        "stop" : 1621018446977,
+        "duration" : 11304
+      }
+    } ]
+  },
+  "34531aed8b54ba88c5c03644b889acde" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd6cd0da67e4cef8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621018432102,
+        "stop" : 1621018435673,
+        "duration" : 3571
+      }
+    } ]
+  },
+  "1307e7458f3c1ba6a37fcfae40159e2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de3754a2ec48f4b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621018446978,
+        "stop" : 1621018447146,
+        "duration" : 168
+      }
+    } ]
+  }
+}

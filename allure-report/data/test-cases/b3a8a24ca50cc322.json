@@ -1,0 +1,240 @@
+{
+  "uid" : "b3a8a24ca50cc322",
+  "name" : "should search for product and verify the search text value",
+  "fullName" : "Ebay Product search.should search for product and verify the search text value",
+  "historyId" : "34531aed8b54ba88c5c03644b889acde",
+  "time" : {
+    "start" : 1621009984190,
+    "stop" : 1621009987391,
+    "duration" : 3201
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1621009984192,
+        "stop" : 1621009984302,
+        "duration" : 110
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4b368b9703a42ff1",
+        "name" : "Response",
+        "source" : "4b368b9703a42ff1.json",
+        "type" : "application/json",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1621009984304,
+        "stop" : 1621009984326,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3bb2563724458731",
+        "name" : "Request",
+        "source" : "3bb2563724458731.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "b72c0b9c127a610b",
+        "name" : "Response",
+        "source" : "b72c0b9c127a610b.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/5fe345c4-30df-4943-a4a0-a5323dfaeb32/clear",
+      "time" : {
+        "start" : 1621009984334,
+        "stop" : 1621009984376,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST /session/:sessionId/element/5fe345c4-30df-4943-a4a0-a5323dfaeb32/value",
+      "time" : {
+        "start" : 1621009984381,
+        "stop" : 1621009984597,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f252812f13bff10f",
+        "name" : "Request",
+        "source" : "f252812f13bff10f.json",
+        "type" : "application/json",
+        "size" : 22
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1621009984597,
+        "stop" : 1621009984623,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7e44716e6071d0a9",
+        "name" : "Request",
+        "source" : "7e44716e6071d0a9.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "1af1c483f693cceb",
+        "name" : "Response",
+        "source" : "1af1c483f693cceb.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/41f28ff4-008a-4ca5-9e64-a9d6ae13b776/click",
+      "time" : {
+        "start" : 1621009984625,
+        "stop" : 1621009987359,
+        "duration" : 2734
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1621009987360,
+        "stop" : 1621009987376,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9fcafa5f6a076f3d",
+        "name" : "Request",
+        "source" : "9fcafa5f6a076f3d.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "53810debd9f9cd8c",
+        "name" : "Response",
+        "source" : "53810debd9f9cd8c.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/c6d47948-c973-4c3e-b5fe-d1c18ee3b81f/property/value",
+      "time" : {
+        "start" : 1621009987380,
+        "stop" : 1621009987390,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d6c0899881c1d122",
+        "name" : "Response",
+        "source" : "d6c0899881c1d122.json",
+        "type" : "application/json",
+        "size" : 8
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "testClass",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "testMethod",
+    "value" : "should search for product and verify the search text value"
+  }, {
+    "name" : "package",
+    "value" : "Ebay Product search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.212"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b3a8a24ca50cc322.json",
+  "parameterValues" : [ "chrome-90.0.4430.212" ]
+}
