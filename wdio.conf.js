@@ -1,4 +1,8 @@
 exports.config = {
+    //BrowserStack config
+    user: process.env.BROWSERSTACK_USERNAME,
+    key: process.env.BROWSERSTACK_ACCESS_KEY,
+
     //
     // ====================
     // Runner Configuration
@@ -8,11 +12,11 @@ exports.config = {
     // on a remote machine).
     runner: 'local',
     //
-    // ==================
     // Specify Test Files
     // ==================
-    // Define which test specs should run. The pattern is relative to the directory
+    // ==================
     // from which `wdio` was called.
+    // Define which test specs should run. The pattern is relative to the directory
     //
     // The specs are defined as an array of spec files (optionally using wildcards
     // that will be expanded). The test for each spec file will be run in a separate
@@ -24,7 +28,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        //'./test/specs/**/*.js'
+        './test/specs/**/search.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -53,7 +58,7 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -66,9 +71,9 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }
-    //,{
-    //    browserName: 'firefox'
-    //}
+        //,{
+        //    browserName: 'firefox'
+        //}
     ],
     //
     // ===================
@@ -117,8 +122,9 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
-    //services:['selenium-standalone']
+    services: ['browserstack'],
+    //services:['selenium-standalone'],
+    //services: ['chromedriver'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -140,12 +146,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', {
-        outputDir: 'allure-results',
-    },],],
+    reporters: [['allure',
+        { outputDir: 'allure-results', },
+    ],
+    ['junit',
+        { outputDir: './report', },],
+    ],
 
-
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -214,9 +221,9 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-     beforeTest: function (test, context) {
-         browser.maximizeWindow();
-     },
+    beforeTest: function (test, context) {
+        browser.maximizeWindow();
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
@@ -232,11 +239,11 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-     afterTest: function(test, context, { error, result, duration, passed, retries }) {
-         if (error){
-            browser.takeScreenshot();    
-         }
-     },
+    afterTest: function (test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            browser.takeScreenshot();
+        }
+    },
 
 
     /**
