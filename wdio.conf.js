@@ -12,7 +12,7 @@ exports.config = {
     // on a remote machine).
     runner: 'local',
     //
-    // Specify Test Files
+    // Specify Test Files-
     // ==================
     // ==================
     // from which `wdio` was called.
