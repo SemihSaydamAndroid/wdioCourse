@@ -29,7 +29,7 @@ exports.config = {
     //
     specs: [
         //'./test/specs/**/*.js'
-        './test/specs/**/search.js'
+        './test/specs/**/watches.js'
     ],
     // Patterns to exclude.
     exclude: [

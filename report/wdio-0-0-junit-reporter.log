@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Ebay Product search" timestamp="2021-05-22T17:34:36" time="6.402" tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="Ebay Product search" timestamp="2021-05-22T18:53:42" time="18.594" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Ebay Product search"/>
-      <property name="capabilities" value="chrome.90_0_4430_212.macosx"/>
+      <property name="capabilities" value="chrome.90_0_4430_72.windows"/>
       <property name="file" value="./test/specs/search.js"/>
     </properties>
-    <testcase classname="chrome.90_0_4430_212.macosx.Ebay Product search" name="should open the main url and verify the title" time="2.924">
+    <testcase classname="chrome.90_0_4430_72.windows.Ebay Product search" name="should open the main url and verify the title" time="11.541">
       <system-out><![CDATA[
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/window/maximize - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/window/current/maximize - {}
 RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/url - {"url":"https://www.ebay.com/"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/url - {"url":"https://www.ebay.com/"}
 RESULT: {"url":"https://www.ebay.com/"}
-COMMAND: GET /session/57d510291c5114c36d2f6319f913f163/title - {}
+COMMAND: GET /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/title - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.90_0_4430_212.macosx.Ebay Product search" name="should search for product and verify the search text value" time="3.2">
+    <testcase classname="chrome.90_0_4430_72.windows.Ebay Product search" name="should search for product and verify the search text value" time="5.628">
       <system-out><![CDATA[
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/window/maximize - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/window/current/maximize - {}
 RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element - {"using":"css selector","value":"#gh-ac"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element - {"using":"css selector","value":"#gh-ac"}
 RESULT: {"using":"css selector","value":"#gh-ac"}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element/68b91d63-039d-47e9-aead-e21bd0a1adf0/clear - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element/0/clear - {}
 RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element/68b91d63-039d-47e9-aead-e21bd0a1adf0/value - {"text":"Laptop"}
-RESULT: {"text":"Laptop"}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element - {"using":"css selector","value":"#gh-btn"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element/0/value - {"value":["L","a","p","t","o","p"]}
+RESULT: {"value":["L","a","p","t","o","p"]}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element - {"using":"css selector","value":"#gh-btn"}
 RESULT: {"using":"css selector","value":"#gh-btn"}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element/286e0191-228d-4516-aacb-8b0695a2550f/click - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element/1/click - {}
 RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element - {"using":"css selector","value":"#gh-ac"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element - {"using":"css selector","value":"#gh-ac"}
 RESULT: {"using":"css selector","value":"#gh-ac"}
-COMMAND: GET /session/57d510291c5114c36d2f6319f913f163/element/cb3ce737-f237-4dcf-ac4f-96b49748bb72/property/value - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/execute - {"script":"return (function getProperty(element, property) {\n    return element[property];\n}).apply(null, arguments)","args":[{"ELEMENT":"2"},"value"]}
+RESULT: {"script":"return (function getProperty(element, property) {\n    return element[property];\n}).apply(null, arguments)","args":[{"ELEMENT":"2"},"value"]}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.90_0_4430_72.windows.Ebay Product search" name="should redirect to a new page and verify the title" time="0.323">
+      <system-out><![CDATA[
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/window/current/maximize - {}
+RESULT: {}
+COMMAND: GET /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/title - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.90_0_4430_212.macosx.Ebay Product search" name="should redirect to a new page and verify the title" time="0.112">
+    <testcase classname="chrome.90_0_4430_72.windows.Ebay Product search" name="should update the search category via dropdown" time="1.017">
       <system-out><![CDATA[
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/window/maximize - {}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/window/current/maximize - {}
 RESULT: {}
-COMMAND: GET /session/57d510291c5114c36d2f6319f913f163/title - {}
-RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.90_0_4430_212.macosx.Ebay Product search" name="should update the search category via dropdown" time="0.153">
-      <system-out><![CDATA[
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/window/maximize - {}
-RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
 RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
-COMMAND: GET /session/57d510291c5114c36d2f6319f913f163/element/24db51d1-ecf7-4b6f-a1ef-d252a19f2356/text - {}
+COMMAND: GET /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element/3/text - {}
 RESULT: {}
-COMMAND: POST /session/57d510291c5114c36d2f6319f913f163/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: POST /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
 RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
-COMMAND: GET /session/57d510291c5114c36d2f6319f913f163/element/24db51d1-ecf7-4b6f-a1ef-d252a19f2356/text - {}
+COMMAND: GET /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70/element/3/text - {}
 RESULT: {}
-COMMAND: DELETE /session/57d510291c5114c36d2f6319f913f163 - {}
+COMMAND: DELETE /session/e4edb88d71aeeba6577d9a9347ff9b78e11eac70 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
